@@ -1,10 +1,10 @@
-# Paint.io Privacy Policy
+# Paint Rumble Privacy Policy
 
 **Effective date:** October 14, 2026
 
 ## 1. Who we are and what this policy covers
 
-Paint.io (the "game") is a territory game for iPhone and Android, made by Gary Lam ("we", "us"). You can reach us at **paintio1034@gmail.com**; that email is our only contact point.
+Paint Rumble (the "game") is a territory game for iPhone and Android, made by Gary Lam ("we", "us"). You can reach us at **paintrumble@gmail.com**; that email is our only contact point.
 
 This policy explains what the game stores, what leaves your device, who receives it and what you can do about it. The short version of how the game is built:
 
@@ -80,7 +80,7 @@ Some US states' laws treat personalised ads as "targeted advertising", "sharing"
 
 ## 9. Children
 
-Paint.io is for people **16 and older**. It is not directed at, or intended for, anyone under 16, and we do not knowingly collect or solicit personal information from anyone under 16 or knowingly allow them to use our products. If you are under 16, you should not use our products or send us information about yourself, such as your name, address, telephone number or email address. If we learn that we have collected personal information from someone under 16, we will delete it. Parents and guardians can email paintio1034@gmail.com and we will help (section 8).
+Paint Rumble is for people **16 and older**. It is not directed at, or intended for, anyone under 16, and we do not knowingly collect or solicit personal information from anyone under 16 or knowingly allow them to use our products. If you are under 16, you should not use our products or send us information about yourself, such as your name, address, telephone number or email address. If we learn that we have collected personal information from someone under 16, we will delete it. Parents and guardians can email paintrumble@gmail.com and we will help (section 8).
 
 The game does not ask for your age or birthday. Its only age signal is Apple's Game Center child flag. It cannot detect a child's age in any other way, so it is **not a substitute for parental controls**. If a child may have access to your device, we recommend Family Link on Android, Screen Time and Game Center child accounts on iPhone.
 
