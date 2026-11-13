@@ -6,62 +6,54 @@
 
 Paint Rumble (the "game", published as Paint.io until November 2026) is a territory game for iPhone and Android, made by Gary Lam ("we", "us"). You can reach us at **paintrumble@gmail.com**; that email is our only contact point.
 
-This policy explains what the game stores, what leaves your device, who receives it and what you can do about it. The short version of how the game is built:
+This policy explains what the game stores, what leaves your device, who receives it and what you can do about it. The short version:
 
-- There is no account and no login of our own, and we run no server of our own.
-- The game uses one analytics tool, Google Analytics for Firebase, to measure how rounds and sessions go, and for some play sessions it also keeps a recording of how the rounds were played and which buttons were pressed (section 2b), so we can make the game better to play. Neither knows who you are. If the game crashes, Firebase Crashlytics sends a crash report (section 2c) so we can fix it. There is no social feature. The rivals you play against are controlled by the computer.
-- We advertise the game on Facebook and Instagram. So that we can tell whether those ads work, the game includes software from Meta that tells Meta when the game was installed and when it is opened (section 2d). It is used for nothing else: there is no Facebook login and no sharing to Facebook.
-- The game shows ads from one company, Google AdMob, and Google's ad software collects data about your device while it does.
+- There is no account and no login of our own, and we run no server of our own. The rivals you play against are controlled by the computer.
+- The game shows ads, and the advertising software in it collects data about your device while it does.
+- The game measures how it is played and reports crashes, so we can improve it. None of that tells us who you are.
+- We advertise the game, and the game tells the advertising platforms we use when it was installed and opened, so we can see whether our ads work.
 - Your progress can be saved to your own iCloud or Google Play Games account, which we cannot read (section 4).
 
-## 2. Who receives data
+## 2. What is collected and who receives it
 
-| Recipient | What | Why |
+We work with a small number of service providers. They receive data directly from the game, for these purposes:
+
+| Purpose | What | Who receives it |
 |---|---|---|
-| Google AdMob | Ad data: your advertising ID and other device identifiers, IP address and approximate location, ad interactions, and device and app information | Showing and measuring ads |
-| Google Analytics for Firebase | Usage data: how rounds and play sessions go (for example how long a round lasted, how it ended, how it was played, which rivals were dealt, whether you played again), which screens and shop shelves you open and for how long and which looks you try on, which avatar you play and how far you have levelled it, missions, unlocks and settings changes, and whether you shared the game from the invite and to which kind of app (for example "messages" or "whatsapp"; never who you sent it to); a random app-instance identifier made by the analytics software; device and app information; IP address and approximate location. The advertising ID is **not** collected for analytics, and we set no user identifier | Measuring and improving the game: seeing what keeps rounds fun and tuning the rivals and missions you are dealt (section 2a) |
-| Firebase Crashlytics | Crash reports (section 2c): what the game was doing when it crashed (the code's call stack and log lines), the device model, OS and app version, and a random installation identifier made by Crashlytics | Finding and fixing crashes |
-| Google Cloud Storage for Firebase (our storage) | Session recordings (section 2b): how the rounds of a play session went and which menu buttons were pressed, under a random recording identifier; the IP address of the upload | Finding out why players stop playing and improving the game |
-| Meta Platforms (Facebook, Instagram) | Install measurement (section 2d): that the game was installed and when it is opened; device and app information (model, OS and app version, language, time zone, screen size and similar); IP address; identifiers made by Meta's software for the app; technical reports about Meta's own software (its settings, and crashes inside it); your advertising ID, on iPhone only if you chose Allow tracking, on Android unless you have deleted it. On iPhone, Apple's SKAdNetwork also tells Meta that an install followed one of our ads, without saying whose | Measuring our own ads for the game on Meta's apps, and letting Meta show those ads to people likely to install it |
-| Apple (iPhone) | Your iCloud save; purchases; Game Center sign-in | Cloud save, Remove ads, choosing the right ads |
-| Google Play (Android) | Play Games sign-in (your player name and ID); your Saved Game; purchases | Cloud save, Remove ads |
+| Showing and measuring ads | Your advertising ID and other device identifiers, IP address and approximate location, ad interactions, and device and app information | Our advertising provider and the companies that take part in showing ads through it |
+| Measuring and improving the game | How rounds and play sessions go, which screens and buttons you use, what you unlock, and settings changes; a random identifier made by the analytics software; device and app information; IP address and approximate location. No advertising ID and no user identifier | Our analytics provider |
+| Finding and fixing crashes | What the game was doing when it crashed, the device model, OS and app version, and a random installation identifier | Our crash-reporting provider |
+| Session recordings (section 2b) | How the rounds of a play session went and which menu buttons were pressed, under a random identifier; the IP address of the upload | Our own cloud storage, run by our hosting provider |
+| Measuring our own ads for the game (section 2c) | That the game was installed and when it is opened; device and app information; IP address; identifiers made by the measurement software; your advertising ID where allowed | The advertising platforms where we promote the game |
+| Cloud save, purchases and sign-in | Your saved progress; purchases; Game Center or Play Games sign-in | Apple (iPhone) or Google Play (Android) |
+
+At present these providers are Google (AdMob, Google Analytics for Firebase, Firebase Crashlytics and Cloud Storage for Firebase) and Meta Platforms (install measurement). Each handles data under its own privacy policy. We may change providers; this policy will be updated when the purposes or the kinds of data change. We may also disclose information if the law requires it.
 
 ### Sharing the game
 
-After a good round the game may invite you to share it with friends. Sharing opens your phone's own share sheet with a short message and a link to the game on the App Store (from an iPhone) or Google Play (from an Android phone). You choose the app and the people; the game never sees your contacts, who you sent it to, or what you wrote, and never sends anything itself. Your phone tells the game only whether the share went through and which app you picked, which the game uses to count shares towards a coin prize (saved with your progress, section 4) and reports to Google Analytics for Firebase as a kind of app (section 2). The invite is never shown to a child account.
+After a good round the game may invite you to share it with friends. Sharing opens your phone's own share sheet with a short message and a link to the game's store page. You choose the app and the people; the game never sees your contacts, who you sent it to, or what you wrote. Your phone tells the game only whether the share went through and which kind of app you picked, which the game uses to count shares towards a coin prize and includes in its analytics. The invite is never shown to a child account.
 
 ### 2a. How the game adapts to you
 
-The game keeps a small record on your device of how your recent rounds went and what you did at the end of each (played again, went home, or left the game). It uses that record to deal your next round: which computer rivals are near you at the start, how gentle or lively the lobby is, and later which missions you get. The record is part of your save (section 4), so it syncs with your progress. It never changes a round while you are playing it, and it never changes your own speed or controls. Delete my data clears it.
-
-A copy of the same facts goes to Google Analytics for Firebase as events, with the settings we used for that round, so we can see whether the adaptation works and tune it. Settings for the adaptation can be delivered to the game by Firebase Remote Config, which sends the game's version, language, country and time zone to Google to do so.
+The game keeps a small record on your device of how your recent rounds went and what you did at the end of each. It uses that record to deal your next round: which computer rivals are near you, how gentle or lively the lobby is, and which missions you get. The record is part of your save (section 4). It never changes a round while you are playing it, and it never changes your own speed or controls. Delete my data clears it. The same facts are included in the analytics, so we can see whether the adaptation works.
 
 ### 2b. Session recordings
 
-For some play sessions (at present most of them; later a small share for players who have played a while), the game records what happened so we can replay it and see where the game was confusing, too hard or not fun:
+For some play sessions the game records what happened so we can replay it and see where the game was confusing, too hard or not fun: in rounds, your steering, where every player was and how the round went; in the menus, which screen was up and which buttons you pressed.
 
-- **in rounds:** the round's starting conditions, your steering, where every player was each second, what was captured, who was knocked out and how the round ended;
-- **in the menus:** which screen was up, which button you pressed and where on the screen, when sheets opened and closed and how far you scrolled the shop, with the time since the session began.
+A recording is stored under a random identifier made for that session. It is not your analytics identifier, your advertising ID or your device identifier, and we cannot link it to you or to your other sessions. It contains no name, account, location or device details. Nothing in it changes how the game plays.
 
-A recording is stored under a random identifier made for that session. It is not your analytics identifier, your advertising ID or your device identifier, and we cannot link it to you or to your other sessions. It contains no name, account, location or device details. The game writes it on your device and sends it to our storage at Google (Cloud Storage for Firebase) when you leave the game; a recording that can't be sent waits on your device for the next time. Nothing in it changes how the game plays.
+### 2c. Install measurement
 
-The game never records players Game Center reports as children.
+We pay for ads for Paint Rumble on other apps and websites. To know whether an ad led to an install, the game includes measurement software from the advertising platforms we use, set up to do one job: it reports that the game was installed and each time it is opened, with technical details about the device and app. We send nothing about how you play, what you unlock or what you buy, and the game has no social login or friends list.
 
-### 2c. Crash reports
+Where allowed, the report includes your advertising ID: on iPhone only if you chose Allow tracking in Apple's prompt, on Android unless you have deleted it in your Google ad settings. With it, a platform may connect the install to an account you have with it and use that under its own privacy policy, including for advertising. Without it, installs on iPhone are counted in totals only, through Apple's own system.
 
-If the game crashes, Firebase Crashlytics records what the game was doing at the moment (the code's call stack and recent log lines), the device model, OS and app version, and a random installation identifier Crashlytics makes, and sends it the next time the game starts. It is used only to find and fix crashes. It is collected only when analytics is (never for players Game Center reports as children); reports saved while collection is off are deleted, not sent later. Delete my data deletes any report not yet sent.
+To stop your advertising ID being used, choose "Ask App Not to Track" on iPhone or delete your advertising ID in Android's settings.
 
-### 2d. Install measurement (Meta)
+### Children's accounts
 
-We pay for ads for Paint Rumble on Facebook and Instagram. To know whether an ad led to an install, the game includes Meta's software (the Facebook SDK), set up to do one job: it tells Meta that the game was installed and each time it is opened. Meta's software also sends Meta technical reports about itself (which of its settings are on, whether you answered Apple's tracking prompt, and crashes inside Meta's software). We send Meta nothing about how you play, what you unlock or what you buy, and the game has no Facebook login, friends list or sharing to Facebook.
-
-With that signal Meta receives technical details about the device and app (section 2), your IP address and, where allowed, your advertising ID: on iPhone only if you chose Allow tracking in Apple's prompt, on Android unless you have deleted it in your Google ad settings (resetting it only gives you a new one). If Meta recognises the advertising ID, it can connect the install to a Facebook or Instagram account and use it under its own privacy policy, including for advertising. Without the advertising ID, installs on iPhone are counted through Apple's SKAdNetwork, which reports totals and never who installed.
-
-Meta's software is not started for players Game Center reports as children: on iPhone the game waits for Game Center's answer first (up to 20 seconds; with no answer by then it treats you as 13 or over, as it does for ads), and if Game Center says so later, Meta's software is switched off for the rest of that launch. Where the game shows Apple's tracking prompt, Meta's software starts only after you have answered it; if you bought Remove ads the game never shows that prompt, and Meta's software then runs without your advertising ID. **Delete my data** switches it off for the rest of that launch. To stop your advertising ID being used, choose "Ask App Not to Track" on iPhone or delete your advertising ID in Android's settings; you can also manage how Meta uses data from other apps in your Facebook or Instagram settings ("Your activity off Meta technologies").
-
-### Other recipients
-
-We show ads from no ad network other than Google AdMob, and use no mediation partners. Others who take part in showing ads through Google's systems may also receive limited data, under Google's rules. We may disclose information if the law requires it.
+Analytics, crash reports, session recordings and install measurement are all switched off for players Game Center reports as children, and those players see only non-personalised ads.
 
 ## 3. Purchases
 
@@ -80,49 +72,42 @@ These copies are held by Apple or Google under their own policies, and we cannot
 |---|---|
 | On your device | Until you use Delete my data (for progress) or uninstall the game |
 | Cloud save | Until you delete it in your Apple or Google account; uninstalling does not remove it |
-| Ad data held by Google | Under Google's own retention rules |
-| Analytics events | Up to 14 months tied to the app-instance identifier in Google Analytics; we may keep an export of the events for longer to study them, and aggregate reports indefinitely |
-| Crash reports | Kept by Google for 90 days (Crashlytics' own retention) |
-| Install measurement held by Meta | Under Meta's own retention rules |
-| Session recordings | Kept as long as they help us improve the game; older ones move to cheaper storage. They can't be linked to you, so they can't be found or deleted on request |
+| Ad and install measurement data held by our providers | Under each provider's own retention rules |
+| Analytics | Up to 14 months tied to the random identifier; we may keep an export for longer to study it, and aggregate reports indefinitely |
+| Crash reports | 90 days |
+| Session recordings | As long as they help us improve the game. They can't be linked to you, so they can't be found or deleted on request |
 | Emails you send us | Only as long as needed to answer you and keep a record of your request |
-| Other data held by us | None: we keep no copy of players' progress or ad data beyond the analytics and session recordings above |
 
 ## 6. Security
 
-We do not run servers or keep player data, other than emails you send us, the analytics events Google holds for us and the session recordings in our Google Cloud storage. Progress sits in your phone's app storage and in your own iCloud or Google account, protected by Apple's and Google's systems. No system is perfectly secure, and the security of Google's ad and analytics data is Google's responsibility, and that of the install measurement data is Meta's.
+We do not run servers or keep player data, other than emails you send us, the analytics our provider holds for us and the session recordings in our cloud storage. Progress sits in your phone's app storage and in your own iCloud or Google account, protected by Apple's and Google's systems. No system is perfectly secure, and each provider is responsible for the security of the data it holds.
 
 ## 7. Where data goes
 
-We transfer no data ourselves. Google may process ad and analytics data and session recordings in the United States and other countries, under its own safeguards. Apple and Google may do likewise with cloud saves, and Meta with install measurement data.
+We transfer no data ourselves. Our providers, Apple and Google may process data in the United States and other countries, under their own safeguards.
 
 ## 8. Your choices and rights
 
 **In the game.**
-- **Settings > Privacy and ads > Delete my data** resets your progress on this device and replaces your cloud save with an empty one (this needs a connection and takes effect when it syncs).
-- It also gives the game a new analytics identifier, so events sent before are no longer connected to events sent after. It does **not** clear the device identifier, the Remove ads note, your sound, vibration and minimap settings, or any choice you made in Google's form or Apple's tracking prompt. Those stay until you uninstall. It does **not** delete your Apple, Google or Play Games account, the purchase record, data Google holds for ads, or analytics events already sent.
-- It also switches off Meta's install measurement (section 2d) for the rest of that launch. It does not delete what Meta already received.
-- It also deletes any session recordings still waiting on this device and stops recording for the rest of that launch. It does not delete recordings already sent (they can't be linked to you).
+- **Settings > Privacy and ads > Delete my data** resets your progress on this device and replaces your cloud save with an empty one (this needs a connection and takes effect when it syncs). It gives the game a new analytics identifier, deletes any session recordings and crash reports still waiting on this device, and switches off recording and install measurement for the rest of that launch.
+- It does **not** clear the device identifier, the Remove ads note, your sound, vibration and minimap settings, or any choice you made in the ads consent form or Apple's tracking prompt; those stay until you uninstall. It does **not** delete your Apple, Google or Play Games account, the purchase record, or data our providers have already received.
 - **Settings > Privacy and ads > Change** adjusts ad personalisation.
 
-**Elsewhere.** To remove the saved game itself, use your iCloud storage settings or Play Games settings. To manage data Google holds for ads, use Google's own controls and, on iPhone, Apple's Tracking setting. To manage what Meta holds, use your Facebook or Instagram settings (section 2d).
+**Elsewhere.** To remove the saved game itself, use your iCloud storage settings or Play Games settings. To manage data held for ads, use your phone's advertising and tracking settings and the ad settings of the accounts you hold with advertising platforms.
 
-**Access and correction.** We hold no profile that identifies you: the analytics events carry only a random identifier, and session recordings a different random identifier per session, that we cannot connect to a person, so we cannot look up or hand over "your" events. You can email us for help or to make a request. We may need to point you to Apple or Google where they hold the data.
+**Access and correction.** We hold no profile that identifies you: analytics and session recordings carry only random identifiers that we cannot connect to a person, so we cannot look up or hand over "your" data. You can email us for help or to make a request. We may need to point you to Apple, Google or another provider where they hold the data.
 
 ### US state privacy rights
 
-Some US states' laws treat personalised ads as "targeted advertising", "sharing" or "sale" of personal information. Personalised ads, and telling Meta about an install together with your advertising ID (on iPhone if you choose Allow tracking; on Android by default), may count as that, so these rights apply to you if you live in such a state:
+Some US states' laws treat personalised ads as "targeted advertising", "sharing" or "sale" of personal information. Personalised ads, and reporting an install together with your advertising ID (on iPhone if you choose Allow tracking; on Android by default), may count as that, so these rights apply to you if you live in such a state:
 
-- **Categories made available to Google AdMob:** identifiers (advertising ID, device identifiers, IP address); internet or other network activity (ad interactions, device and app information); approximate geolocation.
-- **Categories made available to Google Analytics for Firebase:** identifiers (a random app-instance identifier, IP address); internet or other network activity (how you play and which screens you use, device and app information); approximate geolocation. We use it to measure and improve the game, not for advertising.
-- **Categories made available to Meta (install measurement, section 2d):** identifiers (advertising ID where allowed, identifiers made by Meta's software, IP address); internet or other network activity (that the game was installed and opened, device and app information). Used to measure and deliver our own ads for the game.
-- **Crash reports (Firebase Crashlytics):** device information, a random installation identifier, diagnostic data. Used to fix crashes, not for advertising, not sold or shared.
-- **Session recordings (held by us, at Google):** internet or other network activity (how you played and which buttons you pressed); IP address at upload. Used to improve the game, not for advertising, not sold or shared.
+- **Categories made available for advertising and install measurement:** identifiers (advertising ID, device identifiers, IP address); internet or other network activity (ad interactions, that the game was installed and opened, device and app information); approximate geolocation.
+- **Categories used to measure and improve the game (analytics, crash reports, session recordings):** identifiers (random identifiers, IP address); internet or other network activity (how you play and which screens you use, device and app information, diagnostic data); approximate geolocation. Not used for advertising, not sold or shared.
 - **Purposes:** showing and measuring ads, measuring our own advertising, and preventing fraud.
 - **Sensitive data:** we collect none.
 - **Under-16s:** we do not knowingly sell or share data of anyone under 16.
 - **Your rights:** to know what we hold, to delete, to correct, to opt out of targeted advertising, sharing or sale, and not to be treated worse for using these rights.
-- **How to use them (including "Do Not Sell or Share My Personal Information"):** switch off personalisation (**Change**, or "Ask App Not to Track" on iPhone, which also keeps your advertising ID from Meta; on Android, delete your advertising ID in Google's ad settings), use **Delete my data**, or email us. Where AdMob offers a US-states message, it gives a further opt-out.
+- **How to use them (including "Do Not Sell or Share My Personal Information"):** switch off personalisation (**Change**, or "Ask App Not to Track" on iPhone; on Android, delete your advertising ID in your Google ad settings), use **Delete my data**, or email us.
 - **Appeal:** if we decline a request, reply to our email to ask for a review, and you may then contact your state's attorney general.
 - **Agents:** an authorised agent may write on your behalf; we may ask for proof.
 - **Opt-out signals:** the game does not receive Global Privacy Control signals, so use the controls above.
