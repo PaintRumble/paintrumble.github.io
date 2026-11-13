@@ -27,7 +27,7 @@ We work with a small number of service providers. They receive data directly fro
 | Measuring our own ads for the game (section 2c) | That the game was installed and when it is opened; device and app information; IP address; identifiers made by the measurement software; your advertising ID where allowed | The advertising platforms where we promote the game |
 | Cloud save, purchases and sign-in | Your saved progress; purchases; Game Center or Play Games sign-in | Apple (iPhone) or Google Play (Android) |
 
-At present these providers are Google (AdMob, Google Analytics for Firebase, Firebase Crashlytics and Cloud Storage for Firebase) and Meta Platforms (install measurement). Each handles data under its own privacy policy. We may change providers; this policy will be updated when the purposes or the kinds of data change. We may also disclose information if the law requires it.
+Each provider handles data under its own privacy policy. We may change providers; this policy will be updated when the purposes or the kinds of data change. We may also disclose information if the law requires it.
 
 ### Sharing the game
 
